@@ -33,10 +33,9 @@ body {
 
 .taskscreen {
     /* border: 4px solid rgb(70, 240, 249); */
-    border: 4px solid gray  ;
+    border: 4px solid gray;
     width: calc(100% - 40px);
     /* Subtracting padding from width */
-    height: 30vh;
     margin: 0 auto;
     /* Center horizontally */
     margin-bottom: 20px;
@@ -44,12 +43,27 @@ body {
     border-radius: 30px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* List tasks vertically */
+    align-items: center; /* Center tasks horizontally */
 }
 
 .taskscreen:hover {
     border: 4px solid rgb(120, 31, 3);
+}
+
+.task {
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin-bottom for the gap */
+    background-color: rgb(71, 71, 71);
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%; /* Adjust task width as needed */
+    max-width: 400px; /* Set maximum task width */
+    text-align: center; /* Center task text */
+}
+
+.task:hover {
+    background-color: #351d1d;
 }
 
 .button-box {
@@ -74,8 +88,6 @@ button {
     /* Show ellipsis for overflowed text */
 
     border-radius: 15px;
-
-
 }
 
 /* Media Queries for Responsive Buttons */
