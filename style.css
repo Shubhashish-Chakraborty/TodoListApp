@@ -19,16 +19,29 @@ body {
     min-height: 100vh;
 }
 
+button {
+    cursor: pointer;
+}
+
 .todo-box {
+    background-color: rgb(12, 9, 27);
+
     border: 4px solid gray;
     border-radius: 20px;
-    box-shadow: 0px 0px 25px 2px cyan;
+    box-shadow: 0px 0px 25px 0.5px cyan;
     width: 70vw;
     max-width: 600px;
     height: 90vh;
     display: flex;
     flex-direction: column;
     padding: 20px;
+
+}
+
+.todo-box:hover {
+
+    box-shadow: 0px 0px 25px 0.5px azure;
+        
 }
 
 .taskscreen {
@@ -47,9 +60,9 @@ body {
     align-items: center; /* Center tasks horizontally */
 }
 
-.taskscreen:hover {
+/* .taskscreen:hover {
     border: 4px solid rgb(120, 31, 3);
-}
+} */
 
 .task {
     padding: 10px;
@@ -104,4 +117,76 @@ button {
 
 button:hover {
     box-shadow: 0px 0px 5px 2px rgb(0, 123, 255);
+}
+
+
+.footer-div {
+
+    /* border: 3px solid red; */
+
+    background-color: rgba(34, 4, 4, 0.137);
+
+    box-shadow: 0px 0px 20px 2px red;
+
+    width: 50vw;
+    height: 20vh;
+
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div:hover {
+
+    box-shadow: 0px 0px 20px 6px red;
+
+
+}
+.footer-container {
+
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-links i {
+
+    margin-right: 50px;
+
+    font-size: 30px;
+
+}
+
+.navbar-links #twitterIcon:hover {
+
+    color: rgb(136, 87, 87);
+
+}
+
+.navbar-links #githubIcon:hover {
+
+    color:#1540de67;
+
+}
+
+.navbar-links #instaIcon:hover {
+
+    color: purple;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .footer-div {
+        width: 90vw;
+        height: 15vh;
+    }
+
+    .navbar-links i {
+        margin-right: 20px;
+        font-size: 24px;
+    }
 }
